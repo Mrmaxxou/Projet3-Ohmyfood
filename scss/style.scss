@@ -1,21 +1,140 @@
+@import "./base/norms";
 @import "./base/typo";
 
-body
-{
-    padding: 0;
-    margin:0;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./layout/header";
+
+@import "./components/buttons"
+;
 
 h2
 {
 font-family: $text-font;
-font-size: 22px;
+font-size: 20px;
+}
+
+h3
+{
+font-family: $text-font;
+font-weight: 500;
+font-size: 18px;
+}
+
+h5
+{
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 10;
 }
 
 p
 {
 font-family: $text-font;
-font-size: 12px;
+font-size: 15px;
 font-weight: 100;
+}
 
+/* Localisation */
+
+.location 
+{
+    display: flex;
+    justify-content: center;
+    background-color: $cd-background-location;
+    padding: 10px 0px 10px 0px;
+    &__form{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        & .fa-location-dot{
+            font-size: 0.7em;
+        }
+        & input{
+            font-family: $text-font;
+            font-size: 12px;
+            font-weight: 400;
+            color: black;
+            border: none;
+            background-color: $cd-background-location;
+            margin-left: 13px;
+            &:focus
+            {
+                outline: none;
+            }
+    } 
+    }
+}
+
+/* Introduction */
+
+.introduction
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: rgb(240, 240, 240);
+
+    & h2{
+        margin-top: 22px;
+        text-align: center;
+        width: 70%;
+      
+    }
+    & p{
+        margin-top: 10px;
+        text-align: center;
+    }
+    & button {
+        margin: 20px 0px 20px 0px;
+        padding: 12px 20px 12px 20px;
+    }
+}
+
+/* Description fonctionnement */
+.functioning
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+    & h3{
+        width: 100%;
+        margin: 0px 0px 15px 15px;
+    }
+}
+
+.case
+{
+    width: 95%;
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    & p{
+        border: solid 1px $cd-primary;
+        padding: 2px 6px 2px 6px;
+        font-size: 10px;
+        border-radius: 50%;
+        background-color: $cd-primary;
+        color: white;
+        position: relative;
+        left: 1em;
+    }
+
+    &__bloc{
+        display: flex;
+        align-items: center;
+        border: solid 1px $cd-background-functioning;
+        background-color: $cd-background-functioning;;
+        padding: 16px 80px 16px 20px;
+        margin: 8px 0px 8px 0px;
+        border-radius: 15px;
+        & h5
+        {
+            margin-left: 20px;
+        }
+    }
 }

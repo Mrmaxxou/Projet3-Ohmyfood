@@ -1,0 +1,14 @@
+button
+{
+    font-size: 12px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(
+    to bottom,
+    $cd-secondary,
+    $cd-primary,
+    );  
+
+}
