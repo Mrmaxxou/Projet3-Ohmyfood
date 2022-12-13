@@ -1,0 +1,21 @@
+@import "./base/typo";
+
+body
+{
+    padding: 0;
+    margin:0;
+}
+
+h2
+{
+font-family: $text-font;
+font-size: 22px;
+}
+
+p
+{
+font-family: $text-font;
+font-size: 12px;
+font-weight: 100;
+
+}
