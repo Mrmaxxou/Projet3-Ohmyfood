@@ -2,5 +2,15 @@ $cd-primary: #9356DC;
 $cd-secondary: #FF79DA;
 $cd-tertiary: #99E2D0;
 
+$cd-standard: #000000;
 $cd-background-location: #EBEBEB;
-$cd-background-functioning: #EBEBEB;
+$cd-backgroud-introduction: #F7F7F7;
+$cd-background-functioning: #F7F7F7;
+$cd-background-selection: #F7F7F7;
+$cd-background-footer: #323232;
+
+
+$cd-bouton:linear-gradient(
+    to bottom,
+    $cd-secondary,
+    $cd-primary,);

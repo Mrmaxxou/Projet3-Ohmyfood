@@ -1,0 +1,68 @@
+@mixin chargement{
+  border: 10px solid transparent;
+  border-top: 10px solid $cd-primary;
+  border-bottom: 10px solid $cd-secondary;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg);
+    }
+      100%{
+      transform: rotate(360deg);
+      }  
+  }
+}
+
+@mixin border ($color: $cd-primary){
+  width: 95%;
+  display: flex;
+  align-items: center;
+  border: solid 1px $color;
+  padding: 16px 80px 16px 20px;
+  border-radius: 15px;
+  margin: 8px 0px 8px 0px;
+  box-shadow: 4px 4px 5px #D9D9D9;
+  & h5
+  {
+      margin-left: 20px;
+  }
+}
+
+@mixin icons ($color: $cd-standard){
+  color: $color;
+}
+
+
+@mixin card{
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 5px #D9D9D9;
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin new{
+  width: 80px;
+  padding: 4px 8px 4px 8px;
+  border: solid 1px $cd-tertiary;
+  background-color: $cd-tertiary;
+  border-radius: 2px;
+}
+
+@mixin footertext{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@mixin footericons{
+  color: #FFFFFF;
+  font-size: 0.8em;
+  margin: 0px 8px 0px 0px;
+}

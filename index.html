@@ -12,6 +12,12 @@
 
     <body>
         <main>
+
+            <!--Chargement-->
+
+            <div class="chargement"></div>
+
+            <!--Page d'accueil-->
             <!--Header-->
             <header>
                 <img src="assets/logo/ohmyfood.png" alt="Logo ohmyfood" title="Ohmyfood">
@@ -27,7 +33,7 @@
             <section class="introduction">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-                <button a href="#">Explorer nos restaurants</a></button>
+                <button a href="#explorer">Explorer nos restaurants</a></button>
             </section>
             <!--Fonctionnement-->
             <section class="functioning">
@@ -48,7 +54,7 @@
                 </div>
                 <div class="case">
                     <p>3</p>
-                    <div class="case__bloc">
+                    <div class="case__bloc--highlight">
                         <i class="fa-solid fa-store"></i>
                         <h5>Dégustez au restaurant</h5>
                     </div>
@@ -56,61 +62,58 @@
             </section>
             <!--Sélection restaurant-->
             <section class="selection">
-                <h3>Restaurants</h3>
-                <a href="#" class="selection_card">
-                    <div class="selection_card_img">
-                        <img src="" alt="La palette du goût" title="La palette du goût">
-                            <div class="selection_card_img_blocnew">
+                <h3 id="explorer">Restaurants</h3>
+                <a href="Page1.html" class="selection__card">
+                    <div class="selection__card__img">
+                        <img src="assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" title="La palette du goût">
+                            <div class="selection__card__img__blocnew">
                                 <p>Nouveau</p>
-                            </div>       
+                            </div>          
                     </div>
-                    <div class="selection_card_descriptions">
-                        <div class="selection_card_descriptionstext">
+                     
+                    <div class="selection__card__descriptions">
+                        <div class="selection__card__descriptionstext">
                             <h4>La palette du goût</h4>
                             <p>Ménilmontant</p>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </a>
-                <a href="#" class="selection_card">
-                    <div class="selection_card_img">
-                        <img src="" alt="La note enchantée" title="La note enchantée">
-                            <div class="selection_card_img_blocnew">
-                                <p>Nouveau</p>
-                            </div>       
+                <a href="Page2.html" class="selection__card">
+                    <div class="selection__card__img">
+                        <img src="assets/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" title="La note enchantée">                      
                     </div>
-                    <div class="selection_card_descriptions">
-                        <div class="selection_card_descriptionstext">
+                    <div class="selection__card__img__blocnew">
+                        <p>Nouveau</p>
+                    </div>  
+                    <div class="selection__card__descriptions">
+                        <div class="selection__card__descriptionstext">
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </a>
-                <a href="#" class="selection_card">
-                    <div class="selection_card_img">
-                        <img src="" alt="À la française" title="À la française">
-                            <div class="selection_card_img_blocnew">
-                                <p>Nouveau</p>
-                            </div>       
+                <a href="#" class="selection__card">
+                    <div class="selection__card__img">
+                        <img src="assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" title="À la française">
+                            <div class="selection_card_img_blocnew"></div>       
                     </div>
-                    <div class="selection_card_descriptions">
-                        <div class="selection_card_descriptionstext">
+                    <div class="selection__card__descriptions">
+                        <div class="selection__card__descriptionstext">
                             <h4>À la française</h4>
                             <p>Cité Rouge</p>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </a>
-                <a href="#" class="selection_card">
-                    <div class="selection_card_img">
-                        <img src="" alt="Le délice des sens" title="Le délice des sens">
-                            <div class="selection_card_img_blocnew">
-                                <p>Nouveau</p>
-                            </div>       
+                <a href="#" class="selection__card">
+                    <div class="selection__card__img">
+                        <img src="assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens">
+                            <div class="selection_card_img_blocnew"></div>
                     </div>
-                    <div class="selection_card_descriptions">
-                        <div class="selection_card_descriptionstext">
+                    <div class="selection__card__descriptions">
+                        <div class="selection__card__descriptionstext">
                             <h4>Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
                         </div>
@@ -120,17 +123,19 @@
             </section>
             <!--Footer-->
             <footer>
-                <img src="" alt="Logo Ohmyfood" title="Ohmyfood">
-                <div class="footer_offer">
-                    <i class="fa-solid fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
-                </div>
-                <div class="footer_partner">
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    <a href="#">Devenir partenaire</a>
-                </div>
-                <a href="#">Mentions légales</a>
-                <a href="mailto:ohmyfood@food.com">Contact</a>
+                <section class="footer__text">
+                    <p>ohmyfood</p>
+                    <div class="footer__offer">
+                        <i class="fa-solid fa-utensils"></i>
+                        <a href="#">Proposer un restaurant</a>
+                    </div>
+                    <div class="footer__partner">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        <a href="#">Devenir partenaire</a>
+                    </div>
+                    <a href="#">Mentions légales</a>
+                    <a href="mailto:ohmyfood@food.com">Contact</a>
+                </section>
             </footer>
         </main>
     </body>

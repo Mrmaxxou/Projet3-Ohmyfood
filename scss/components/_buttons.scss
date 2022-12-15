@@ -5,10 +5,6 @@ button
     color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
-    background-image: linear-gradient(
-    to bottom,
-    $cd-secondary,
-    $cd-primary,
-    );  
+    background-image: $cd-bouton;  
 
 }

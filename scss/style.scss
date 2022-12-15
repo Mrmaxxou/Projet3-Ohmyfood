@@ -6,6 +6,7 @@
 @import "./utils/placeholders";
 
 @import "./layout/header";
+@import "./layout/footer";
 
 @import "./components/buttons"
 ;
@@ -23,19 +24,35 @@ font-weight: 500;
 font-size: 18px;
 }
 
+h4
+{
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 14px;
+}
 h5
 {
     font-family: $text-font;
     font-weight: 400;
-    font-size: 10;
+    font-size: 12px;
 }
 
 p
 {
 font-family: $text-font;
-font-size: 15px;
+font-size: 14px;
 font-weight: 100;
 }
+
+/* Chargement */
+
+/*.chargement {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    @include chargement;
+}
+*/
 
 /* Localisation */
 
@@ -76,7 +93,7 @@ font-weight: 100;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    background-color: rgb(240, 240, 240);
+    background-color: $cd-backgroud-introduction;
 
     & h2{
         margin-top: 22px;
@@ -99,11 +116,10 @@ font-weight: 100;
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 30px 0px 0px 0px;
     & h3{
         width: 100%;
-        margin: 0px 0px 15px 15px;
+        margin: 0px 0px 15px 20px;
     }
 }
 
@@ -125,16 +141,74 @@ font-weight: 100;
     }
 
     &__bloc{
-        display: flex;
-        align-items: center;
-        border: solid 1px $cd-background-functioning;
-        background-color: $cd-background-functioning;;
-        padding: 16px 80px 16px 20px;
-        margin: 8px 0px 8px 0px;
-        border-radius: 15px;
-        & h5
-        {
-            margin-left: 20px;
+        @include border($cd-background-functioning);
+        background: $cd-background-functioning;
+        & i{
+            @include icons(#786a6a)
         }
+            &--highlight{
+                @include border(rgba(147,86,220,0.2));
+                background-color: rgba(147,86,220,0.2);
+                & i{
+                    @include icons($cd-primary)
+                    }
+            }
+    }
+}
+
+/* Sélection restaurant*/
+
+.selection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cd-background-selection;
+    margin-top: 50px;
+    padding: 40px 0px 40px 0px;
+    & h3 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.selection__card
+{
+    width: 90%;
+    @include card;
+    margin: 8px 0px 8px 0px;
+    position: relative;
+    &__img{
+        & img{
+        width: 100%;
+        height: 130px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+    }
+}
+
+.selection__card__img__blocnew
+{
+    @include new;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 80%; left: 68%;
+}
+.selection__card__descriptions
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px 10px 0px;
+    & p{
+        padding: 6px 0px 6px 0px;
+    }
+    & .fa-heart{
+        padding-right: 10px;
+        font-size: 1.5em;
+        stroke-width: 5em;
     }
 }
