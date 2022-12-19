@@ -224,3 +224,11 @@ font-weight: 100;
         
     }
 }
+
+/* Image menu */
+
+.menu__img{
+    & img {
+        @include img__menu__size;
+    }
+}

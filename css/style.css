@@ -333,4 +333,12 @@ p {
 .selection__card__descriptions .fa-heart::before {
   content: "<i class=" fa-regular fa-heart "></i>";
   font-weight: bold;
+}
+
+/* Image menu */
+.menu__img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
