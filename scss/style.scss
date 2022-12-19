@@ -194,7 +194,11 @@ font-weight: 100;
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 80%; left: 68%;
+    bottom: 80%; left: 72%;
+    & p{
+        font-weight: 500;
+        color: $cd-text-new;
+    }
 }
 .selection__card__descriptions
 {

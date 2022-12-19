@@ -49,8 +49,9 @@
   width: 80px;
   padding: 4px 8px 4px 8px;
   border: solid 1px $cd-tertiary;
+  border-radius: 10px;
   background-color: $cd-tertiary;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 @mixin footertext{

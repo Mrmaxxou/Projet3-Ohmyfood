@@ -279,13 +279,18 @@ p {
   width: 80px;
   padding: 4px 8px 4px 8px;
   border: solid 1px #99E2D0;
+  border-radius: 10px;
   background-color: #99E2D0;
-  border-radius: 2px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 80%;
-  left: 68%;
+  left: 72%;
+}
+.selection__card__img__blocnew p {
+  font-weight: 500;
+  color: rgb(49, 137, 114);
 }
 
 .selection__card__descriptions {
