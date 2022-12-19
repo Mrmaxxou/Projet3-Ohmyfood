@@ -113,6 +113,12 @@ button {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
 h2 {
   font-family: "Roboto", serif;
   font-size: 20px;
@@ -140,6 +146,10 @@ p {
   font-family: "Roboto", serif;
   font-size: 14px;
   font-weight: 100;
+}
+
+main {
+  position: relative;
 }
 
 /* Chargement */
@@ -341,4 +351,23 @@ p {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Sélection des plats */
+.selection__lunch {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: relative;
+  bottom: 20px;
+  border: solid 1px #F7F7F7;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+}
+
+.selection__lunch__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

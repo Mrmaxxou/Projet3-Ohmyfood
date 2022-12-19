@@ -11,6 +11,11 @@
 @import "./components/buttons"
 ;
 
+h1{
+    font-family: $title-font;
+    font-size: 22px;
+    font-weight: 500;
+}
 h2
 {
 font-family: $text-font;
@@ -42,6 +47,10 @@ p
 font-family: $text-font;
 font-size: 14px;
 font-weight: 100;
+}
+
+main{
+    position: relative;
 }
 
 /* Chargement */
@@ -231,4 +240,28 @@ font-weight: 100;
     & img {
         @include img__menu__size;
     }
+}
+
+/* Sélection des plats */
+
+.selection__lunch
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: relative;
+    bottom: 20px;
+
+    border: solid 1px $cd-background-selection;
+    background-color: $cd-background-selection;
+    border-radius: 20px;
+}
+
+.selection__lunch__name
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
