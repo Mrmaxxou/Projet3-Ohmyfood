@@ -31,12 +31,17 @@ header img {
   justify-content: center;
   margin: 18px 0px 10px 0px;
 }
-.header__menu a {
-  margin: 0px;
-}
 .header__menu img {
   width: 10em;
   height: 1.2em;
+}
+.header__menu a {
+  position: absolute;
+  left: 0;
+}
+.header__menu a i {
+  margin-left: 20px;
+  color: #000000;
 }
 
 footer {
@@ -318,7 +323,7 @@ p {
   padding: 6px 0px 6px 0px;
 }
 .selection__card__descriptions .fa-heart {
-  color: #black;
+  color: black;
   background-color: #FFF;
   border-radius: 50%;
   margin-right: 10px;

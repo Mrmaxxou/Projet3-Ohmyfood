@@ -4,8 +4,7 @@ header
     justify-content: center;
     padding: 18px 0px 10px 0px;
     img{
-        width: 10em;
-        height: 1.2em;
+        @include iconsize;
     }
 }
 
@@ -16,11 +15,15 @@ header
     align-items: center;
     justify-content: center;
     margin: 18px 0px 10px 0px;
-    & a{
-        margin: 0px;
-    }
     & img{
-        width: 10em;
-        height: 1.2em;
+        @include iconsize;
+    }
+    & a{
+        position: absolute;
+        left: 0;
+        & i{
+            margin-left: 20px;
+            color: $cd-standard;
+        }      
     }
 }

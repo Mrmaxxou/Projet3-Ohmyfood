@@ -17,6 +17,12 @@
   }
 }
 
+@mixin iconsize {
+    width: 10em;
+    height: 1.2em;
+}
+
+
 @mixin border ($color: $cd-primary){
   width: 95%;
   display: flex;
