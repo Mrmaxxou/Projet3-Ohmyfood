@@ -24,9 +24,32 @@ header img {
   height: 1.2em;
 }
 
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0px 10px 0px;
+}
+.header__menu a {
+  margin: 0px;
+}
+.header__menu img {
+  width: 10em;
+  height: 1.2em;
+}
+
 footer {
   background-color: #323232;
   padding: 25px 0px 25px 0px;
+}
+footer a {
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .footer__text {
@@ -69,15 +92,6 @@ footer {
   margin: 0px 8px 0px 0px;
 }
 .footer__partner a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Roboto", serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-a {
-  margin-bottom: 8px;
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Roboto", serif;
@@ -304,7 +318,14 @@ p {
   padding: 6px 0px 6px 0px;
 }
 .selection__card__descriptions .fa-heart {
-  padding-right: 10px;
+  color: #black;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-right: 10px;
   font-size: 1.5em;
   stroke-width: 5em;
+}
+.selection__card__descriptions .fa-heart::before {
+  content: "<i class=" fa-regular fa-heart "></i>";
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

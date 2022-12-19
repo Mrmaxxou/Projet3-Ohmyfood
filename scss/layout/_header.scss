@@ -9,3 +9,18 @@ header
     }
 }
 
+.header__menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0px 10px 0px;
+    & a{
+        margin: 0px;
+    }
+    & img{
+        width: 10em;
+        height: 1.2em;
+    }
+}

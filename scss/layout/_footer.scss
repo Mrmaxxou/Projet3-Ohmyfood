@@ -1,6 +1,10 @@
 footer{
     background-color: $cd-background-footer;
     padding: 25px 0px 25px 0px;
+    & a{
+        margin-bottom: 8px;
+        @include footertext;
+    }
 }
 
 .footer__text{
@@ -38,7 +42,3 @@ footer{
     }
 }
 
-a{
-    margin-bottom: 8px;
-    @include footertext;
-}

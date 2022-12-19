@@ -211,8 +211,16 @@ font-weight: 100;
         padding: 6px 0px 6px 0px;
     }
     & .fa-heart{
-        padding-right: 10px;
+        color: #black;
+        background-color: #FFF;
+        border-radius: 50%;
+        margin-right: 10px;
         font-size: 1.5em;
         stroke-width: 5em;
+        &::before{
+            content: "<i class="fa-regular fa-heart"></i>";
+            font-weight: bold;
+        }
+        
     }
 }
