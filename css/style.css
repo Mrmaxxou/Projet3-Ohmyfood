@@ -115,7 +115,7 @@ button {
 
 h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -357,17 +357,39 @@ main {
 .selection__lunch {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 20px;
   position: relative;
-  bottom: 20px;
+  bottom: 30px;
   border: solid 1px #F7F7F7;
   background-color: #F7F7F7;
-  border-radius: 20px;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .selection__lunch__name {
+  width: 95%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin-bottom: 20px;
+}
+.selection__lunch__name h1 {
+  padding-right: 30px;
+}
+.selection__lunch__name i {
+  font-size: 1.4em;
+}
+
+.food__offer {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+}
+.food__offer h2 {
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.food__offer .line {
+  width: 14%;
+  border-bottom: solid 3px #99E2D0;
 }/*# sourceMappingURL=style.css.map */
