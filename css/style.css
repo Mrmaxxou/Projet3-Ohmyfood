@@ -155,7 +155,7 @@ p {
 }
 
 main {
-  position: relative;
+  position: absolute;
 }
 
 /* Chargement */
