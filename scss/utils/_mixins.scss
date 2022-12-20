@@ -19,7 +19,7 @@
 
 @mixin iconsize {
     width: 10em;
-    height: 1.2em;
+    height: 1.6em;
 }
 
 @mixin img__menu__size{
@@ -86,4 +86,5 @@
   border: 1px solid $cd-color-selection-menu;
   border-radius: 15px;
   background-color: $cd-color-selection-menu;
+  box-shadow: 4px 4px 5px #D9D9D9;
 }
