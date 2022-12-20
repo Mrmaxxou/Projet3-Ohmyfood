@@ -105,7 +105,7 @@ footer a {
 }
 
 button {
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 30px;
   color: rgb(255, 255, 255);
   border: none;
@@ -420,4 +420,11 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.button__order {
+  margin: 20px 0px 20px 0px;
+}
+.button__order button {
+  padding: 15px 50px 15px 50px;
 }/*# sourceMappingURL=style.css.map */
