@@ -78,3 +78,12 @@
   font-size: 0.8em;
   margin: 0px 8px 0px 0px;
 }
+
+@mixin boderoffers 
+{
+  padding: 10px 0px 10px 0px;
+  margin: 8px 0px 8px 0px;
+  border: 1px solid $cd-color-selection-menu;
+  border-radius: 15px;
+  background-color: $cd-color-selection-menu;
+}

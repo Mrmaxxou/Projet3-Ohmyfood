@@ -26,7 +26,7 @@ h3
 {
 font-family: $text-font;
 font-weight: 500;
-font-size: 18px;
+font-size: 16px;
 }
 
 h4
@@ -40,6 +40,12 @@ h5
     font-family: $text-font;
     font-weight: 400;
     font-size: 12px;
+}
+
+h6{
+    font-family: $text-font;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 p
@@ -156,8 +162,8 @@ main{
             @include icons(#786a6a)
         }
             &--highlight{
-                @include border(rgba(147,86,220,0.2));
-                background-color: rgba(147,86,220,0.2);
+                @include border(rgba(147,86,220,0));
+                background-color: rgba(147,86,220,0.1);
                 & i{
                     @include icons($cd-primary)
                     }
@@ -288,4 +294,26 @@ main{
         width: 14%;
         border-bottom: solid 3px $cd-tertiary;
     }
+}
+
+.food__offer__meals
+{
+    @include boderoffers;
+    & h3{
+        margin-left: 10px;
     }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 16px 0px 10px;
+        & h6{
+        width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+    }
+}
+
+
