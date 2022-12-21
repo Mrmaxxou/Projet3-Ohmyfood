@@ -234,7 +234,7 @@ font-weight: 100;
     }
     & .heart--complete{
         opacity: 0;
-        transition: all 1s;
+        transition: all 0.4s;
         
         &:hover{
             opacity: 1;
