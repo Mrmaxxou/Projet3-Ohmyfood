@@ -283,6 +283,7 @@ font-weight: 100;
     flex-direction: column;
     width: 92%;
     margin: 15px 0px 15px 0px;
+    anima
     & h2{
         font-weight: 300;
         font-size: 16px;
@@ -295,9 +296,21 @@ font-weight: 100;
     }
 }
 
+@keyframes apparition {
+   100%{
+    opacity: 1;
+    transform: none;
+   }
+} 
+
+
+
 .food__offer__meals
 {
     @include boderoffers;
+    opacity: 0;
+    transform: translateY(10px);
+    
     & h3{
         margin-left: 10px;
     }
@@ -313,6 +326,19 @@ font-weight: 100;
         }
 
     }
+}
+
+.food__offer__list > div:nth-child(1)
+{
+    animation: apparition 0.8s 0.2s ease-out forwards;
+}
+.food__offer__list > div:nth-child(2)
+{
+    animation: apparition 0.8s 0.4s ease-out forwards;
+}
+.food__offer__list > div:nth-child(3)
+{
+    animation: apparition 0.8s 0.6s ease-out forwards;
 }
 
 .button__order
