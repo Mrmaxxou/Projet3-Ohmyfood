@@ -18,14 +18,14 @@ h1{
 }
 h2
 {
-font-family: $text-font;
-font-size: 20px;
+    font-family: $text-font;
+    font-size: 20px;
 }
 
 h3
 {
-font-family: $text-font;
-font-weight: 500;
+    font-family: $text-font;
+    font-weight: 500;
 font-size: 16px;
 }
 
@@ -220,21 +220,33 @@ font-weight: 100;
     padding: 10px 0px 10px 0px;
     & p{
         padding: 6px 0px 6px 0px;
+    }    
+    
+}
+
+
+.selection__card__heart{
+    margin-right: 35px;
+    margin-bottom: 40px;
+    & i{
+        position: absolute;
+        font-size: 1.4em;
     }
-    & .fa-heart{
-        color: black;
-        background-color: #FFF;
-        border-radius: 50%;
-        margin-right: 10px;
-        font-size: 1.5em;
-        stroke-width: 5em;
-        &::before{
-            content: "<i class="fa-regular fa-heart"></i>";
-            font-weight: bold;
-        }
+    & .heart--complete{
+        opacity: 0;
+        transition: all 1s;
         
+        &:hover{
+            opacity: 1;
+            color: transparent;
+            background-image: $cd-bouton;
+            background-clip: text;
+        }
     }
 }
+
+
+
 
 /* Image menu */
 
@@ -303,14 +315,13 @@ font-weight: 100;
    }
 } 
 
-
-
 .food__offer__meals
 {
     @include boderoffers;
     opacity: 0;
     transform: translateY(10px);
-    
+    cursor: pointer;
+
     & h3{
         margin-left: 10px;
     }
@@ -327,6 +338,7 @@ font-weight: 100;
 
     }
 }
+
 
 .food__offer__list > div:nth-child(1)
 {

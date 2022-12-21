@@ -335,17 +335,25 @@ p {
 .selection__card__descriptions p {
   padding: 6px 0px 6px 0px;
 }
-.selection__card__descriptions .fa-heart {
-  color: black;
-  background-color: #FFF;
-  border-radius: 50%;
-  margin-right: 10px;
-  font-size: 1.5em;
-  stroke-width: 5em;
+
+.selection__card__heart {
+  margin-right: 35px;
+  margin-bottom: 40px;
 }
-.selection__card__descriptions .fa-heart::before {
-  content: "<i class=" fa-regular fa-heart "></i>";
-  font-weight: bold;
+.selection__card__heart i {
+  position: absolute;
+  font-size: 1.4em;
+}
+.selection__card__heart .heart--complete {
+  opacity: 0;
+  transition: all 1s;
+}
+.selection__card__heart .heart--complete:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 /* Image menu */
@@ -421,6 +429,7 @@ anima .food__offer h2 {
   box-shadow: 4px 4px 5px #D9D9D9;
   opacity: 0;
   transform: translateY(10px);
+  cursor: pointer;
 }
 .food__offer__meals h3 {
   margin-left: 10px;
