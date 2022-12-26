@@ -119,6 +119,23 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
+.heart i {
+  position: absolute;
+  font-size: 1.4em;
+}
+.heart .heart--complete {
+  opacity: 0;
+}
+.heart .heart--complete:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
@@ -345,21 +362,6 @@ p {
   margin-right: 35px;
   margin-bottom: 40px;
 }
-.selection__card__heart i {
-  position: absolute;
-  font-size: 1.4em;
-}
-.selection__card__heart .heart--complete {
-  opacity: 0;
-  transition: all 0.4s;
-}
-.selection__card__heart .heart--complete:hover {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-}
 
 /* Image menu */
 .menu__img img {
@@ -386,6 +388,7 @@ p {
   width: 92%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 .selection__lunch__name h1 {
@@ -395,13 +398,18 @@ p {
   font-size: 1.4em;
 }
 
+.selection__lunch__heart {
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
 .food__offer {
   display: flex;
   flex-direction: column;
   width: 92%;
   margin: 15px 0px 15px 0px;
 }
-anima .food__offer h2 {
+.food__offer h2 {
   font-weight: 300;
   font-size: 16px;
   padding-bottom: 5px;

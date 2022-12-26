@@ -8,8 +8,8 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-@import "./components/buttons"
-;
+@import "./components/buttons";
+@import "./components/heart";
 
 h1{
     font-family: $title-font;
@@ -228,21 +228,6 @@ font-weight: 100;
 .selection__card__heart{
     margin-right: 35px;
     margin-bottom: 40px;
-    & i{
-        position: absolute;
-        font-size: 1.4em;
-    }
-    & .heart--complete{
-        opacity: 0;
-        transition: all 0.4s;
-        
-        &:hover{
-            opacity: 1;
-            color: transparent;
-            background-image: $cd-bouton;
-            background-clip: text;
-        }
-    }
 }
 
 
@@ -279,6 +264,7 @@ font-weight: 100;
     width: 92%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     & h1{
         padding-right: 30px;
@@ -288,6 +274,11 @@ font-weight: 100;
     } 
 }
 
+.selection__lunch__heart{
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
 
 .food__offer
 {
@@ -295,7 +286,6 @@ font-weight: 100;
     flex-direction: column;
     width: 92%;
     margin: 15px 0px 15px 0px;
-    anima
     & h2{
         font-weight: 300;
         font-size: 16px;
