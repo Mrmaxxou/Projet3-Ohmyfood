@@ -540,6 +540,10 @@ p {
   }
 }
 .food__offer__meals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 10px 0px 10px 0px;
   margin: 8px 0px 8px 0px;
   border: 1px solid #FFFFFF;
@@ -550,19 +554,16 @@ p {
   transform: translateY(10px);
   cursor: pointer;
 }
-.food__offer__meals h3 {
+
+.food__offer__text {
   margin-left: 10px;
 }
-.food__offer__meals__text {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 16px 0px 10px;
+.food__offer__text h6 {
+  margin-top: 4px;
 }
-.food__offer__meals__text h6 {
-  width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+.food__offer__price {
+  margin-right: 20px;
 }
 
 .food__offer__list > div:nth-child(1) {
