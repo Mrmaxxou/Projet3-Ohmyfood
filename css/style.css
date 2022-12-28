@@ -541,7 +541,6 @@ p {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   background-color: #FFFFFF;
@@ -554,6 +553,7 @@ p {
 }
 
 .food__offer__text {
+  width: 90%;
   display: flex;
   flex-direction: column;
   padding: 6px 0px 6px 0px;
@@ -576,8 +576,7 @@ p {
   height: auto;
   flex-direction: row;
   align-items: center;
-  margin: 0px 10px 0px 0px;
-  transform: translateX(63px);
+  margin: 0px -53px 0px 15px;
 }
 .food__offer__price p {
   margin-top: 25px;
@@ -634,22 +633,6 @@ p {
 }
 
 /* Animation validation */
-@-webkit-keyframes validate {
-  from {
-    transform: translateX(63px);
-  }
-  to {
-    transform: translateX(10px);
-  }
-}
-@keyframes validate {
-  from {
-    transform: translateX(63px);
-  }
-  to {
-    transform: translateX(10px);
-  }
-}
 @-webkit-keyframes validaterotate {
   0% {
     transform: rotate(180deg);
@@ -666,12 +649,22 @@ p {
     transform: rotate(360deg);
   }
 }
-.food__offer__meals:hover > .food__offer__price {
-  -webkit-animation: validate 0.5s ease-in-out both;
-          animation: validate 0.5s ease-in-out both;
+@-webkit-keyframes validatetranslate {
+  100% {
+    margin-right: 0px;
+  }
 }
-
+@keyframes validatetranslate {
+  100% {
+    margin-right: 0px;
+  }
+}
 .food__offer__meals:hover > .food__offer__price > .food__offer__choice > i {
   -webkit-animation: validaterotate 0.5s ease-in-out both;
           animation: validaterotate 0.5s ease-in-out both;
+}
+
+.food__offer__meals:hover > .food__offer__price {
+  -webkit-animation: validatetranslate 0.5s ease-in-out both;
+          animation: validatetranslate 0.5s ease-in-out both;
 }/*# sourceMappingURL=style.css.map */

@@ -386,7 +386,6 @@ font-weight: 100;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     @include boderoffers;
     margin: 10px 0px 10px 0px;
@@ -398,6 +397,7 @@ font-weight: 100;
 
 .food__offer__text{
 
+    width: 90%;
     display: flex;
     flex-direction: column;
     padding: 6px 0px 6px 0px;
@@ -416,13 +416,13 @@ font-weight: 100;
 }
 
 .food__offer__price{
+    
     display: flex;
     height: auto;
     flex-direction: row;
     align-items: center;
-    margin: 0px 10px 0px 0px;
-    transform: translateX(63px);
-    & p{
+    margin: 0px -53px 0px 15px;
+;    & p{
         margin-top: 25px;
         margin-right: 10px;
     }
@@ -480,14 +480,6 @@ font-weight: 100;
 
 /* Animation validation */
 
-@keyframes validate {
-    from{
-        transform: translateX(63px);
-    }
-    to{
-        transform: translateX(10px);
-    }
-}
 
 @keyframes validaterotate {
     0%{
@@ -498,14 +490,20 @@ font-weight: 100;
     }
 }
 
-.food__offer__meals:hover >.food__offer__price {
-    animation: validate 0.5s ease-in-out both;
+@keyframes validatetranslate{
+  100%{
+    margin-right: 0px;
+  }
+
 }
 
 .food__offer__meals:hover > .food__offer__price > .food__offer__choice >i{
     animation: validaterotate 0.5s ease-in-out both;
 }
 
+.food__offer__meals:hover > .food__offer__price {
+    animation: validatetranslate 0.5s ease-in-out both;
+}
 
 ////**///////
 
