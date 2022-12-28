@@ -11,6 +11,8 @@
 @import "./components/buttons";
 @import "./components/heart";
 
+/* Structure Général */
+
 h1{
     font-family: $title-font;
     font-size: 24px;
@@ -55,7 +57,7 @@ font-size: 14px;
 font-weight: 100;
 }
 
-/* Chargement */
+/* Chargement de page */
 
 .chargement {
     width: 100%;
@@ -77,6 +79,8 @@ font-weight: 100;
         animation: loading 1.2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
     }
 }
+
+/* Animation chargement pages */
 
 @keyframes loading{
     0%{
@@ -126,6 +130,8 @@ font-weight: 100;
         z-index: -1;
     }
 }
+
+//**//
     
 
 /* Localisation */
@@ -186,6 +192,7 @@ font-weight: 100;
 }
 
 /* Description fonctionnement */
+
 .functioning
 {
     display: flex;
@@ -294,7 +301,7 @@ font-weight: 100;
 }
 
 
-
+///////* Page des menus *//////// 
 
 /* Image menu */
 
@@ -306,6 +313,8 @@ font-weight: 100;
 
 /* Sélection des plats */
 
+
+
 .selection__lunch
 {
     
@@ -315,7 +324,6 @@ font-weight: 100;
     padding: 20px 0px 20px 0px;
     position: relative;
     margin-top: -30px;
-
 
     border: solid 1px $cd-background-selection;
     background-color: $cd-background-selection;
@@ -361,15 +369,20 @@ font-weight: 100;
     }
 }
 
-@keyframes apparition {
-   100%{
-    opacity: 1;
-    transform: none;
-   }
-} 
+.food__offer__case{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+
+
+}
 
 .food__offer__meals
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -381,28 +394,26 @@ font-weight: 100;
 }
 
 .food__offer__text{
+
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0px 6px 0px;
     margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    & h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     & h6{
         margin-top: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 .food__offer__price{
-    margin-right: 20px;
-}
-
-
-.food__offer__list > div:nth-child(1)
-{
-    animation: apparition 0.8s 0.2s ease-out forwards;
-}
-.food__offer__list > div:nth-child(2)
-{
-    animation: apparition 0.8s 0.4s ease-out forwards;
-}
-.food__offer__list > div:nth-child(3)
-{
-    animation: apparition 0.8s 0.6s ease-out forwards;
+    margin: 0px 10px 6px 5px;
 }
 
 .button__order
@@ -412,6 +423,68 @@ font-weight: 100;
         padding: 15px 50px 15px 50px;
     }
 }
+
+.food__offer__choice{
+    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -1px;
+    height: 100%;
+    border: solid 1px $cd-tertiary;
+    background-color: $cd-tertiary;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0 15px;
+    & i{
+        font-size: 20px;
+        color: #FFF;
+        transform: rotate(180deg);
+    }
+}
+
+
+
+/* Animations */
+
+/////* Apparitions des menus *////////
+@keyframes apparition {
+    100%{
+     opacity: 1;
+     transform: none;
+    }
+ } 
+
+ .food__offer__case > div:nth-child(1)
+{
+    animation: apparition 0.8s 0.2s ease-out forwards;
+}
+.food__offer__case > div:nth-child(2)
+{
+    animation: apparition 0.8s 0.4s ease-out forwards;
+}
+.food__offer__case > div:nth-child(3)
+{
+    animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
+
+/* Animation validation */
+
+@keyframes validate {
+    from{
+        margin-right: 10px;
+    }
+    to{
+        margin-right: 60px;
+    }
+}
+
+.food__offer__case:hover > .food__offer__meals > .food__offer__price {
+    animation: validate 0.4s ease-in-out forwards;
+}
+
+
+////**///////
 
 
 
