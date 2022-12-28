@@ -632,6 +632,11 @@ p {
           animation: apparition 0.8s 0.6s ease-out forwards;
 }
 
+.food__offer__list > div:nth-child(4) {
+  -webkit-animation: apparition 0.8s 0.8s ease-out forwards;
+          animation: apparition 0.8s 0.8s ease-out forwards;
+}
+
 /* Animation validation */
 @-webkit-keyframes validaterotate {
   0% {
