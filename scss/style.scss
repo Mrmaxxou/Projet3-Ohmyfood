@@ -372,11 +372,12 @@ font-weight: 100;
 .food__offer__case{
     width: 100%;
     position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 10px 0px 10px 0px;
-
+    
 
 }
 
@@ -386,10 +387,12 @@ font-weight: 100;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     @include boderoffers;
+    margin: 10px 0px 10px 0px;
     opacity: 0;
     transform: translateY(10px);
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -413,7 +416,16 @@ font-weight: 100;
 }
 
 .food__offer__price{
-    margin: 0px 10px 6px 5px;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+    transform: translateX(63px);
+    & p{
+        margin-top: 25px;
+        margin-right: 10px;
+    }
 }
 
 .button__order
@@ -428,13 +440,11 @@ font-weight: 100;
     
     display: flex;
     align-items: center;
-    position: absolute;
-    right: -1px;
-    height: 100%;
     border: solid 1px $cd-tertiary;
     background-color: $cd-tertiary;
     border-radius: 0px 10px 10px 0px;
-    padding: 0 15px;
+    padding: 16px 15px 16px 15px;
+
     & i{
         font-size: 20px;
         color: #FFF;
@@ -454,15 +464,15 @@ font-weight: 100;
     }
  } 
 
- .food__offer__case > div:nth-child(1)
+ .food__offer__list > div:nth-child(1)
 {
     animation: apparition 0.8s 0.2s ease-out forwards;
 }
-.food__offer__case > div:nth-child(2)
+.food__offer__list > div:nth-child(2)
 {
     animation: apparition 0.8s 0.4s ease-out forwards;
 }
-.food__offer__case > div:nth-child(3)
+.food__offer__list > div:nth-child(3)
 {
     animation: apparition 0.8s 0.6s ease-out forwards;
 }
@@ -472,15 +482,28 @@ font-weight: 100;
 
 @keyframes validate {
     from{
-        margin-right: 10px;
+        transform: translateX(63px);
     }
     to{
-        margin-right: 60px;
+        transform: translateX(10px);
     }
 }
 
-.food__offer__case:hover > .food__offer__meals > .food__offer__price {
-    animation: validate 0.4s ease-in-out forwards;
+@keyframes validaterotate {
+    0%{
+        transform: rotate(180deg);    
+    }
+     100%{
+        transform: rotate(360deg);
+    }
+}
+
+.food__offer__meals:hover >.food__offer__price {
+    animation: validate 0.5s ease-in-out both;
+}
+
+.food__offer__meals:hover > .food__offer__price > .food__offer__choice >i{
+    animation: validaterotate 0.5s ease-in-out both;
 }
 
 
