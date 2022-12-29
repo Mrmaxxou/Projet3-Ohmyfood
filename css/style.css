@@ -689,8 +689,9 @@ p {
 }
 
 /***** Responsive Tablette *****/
-/****       1400-992        *****/
-@media screen and (min-width: 991.9px) {
+/****               *****/
+@media screen and (min-width: 767.9px) {
+  /* Page d'acceuil */
   .functioning__case {
     display: flex;
     flex-direction: row;
@@ -707,5 +708,28 @@ p {
   }
   .selection__card {
     width: 45%;
+  }
+}
+/***** Responsive Tablette *****/
+/****       1400-992        *****/
+@media screen and (min-width: 991.9px) {
+  /* Page d'acceuil */
+  .functioning__case {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+  }
+  .case {
+    margin: 0px 6px 0px 6px;
+  }
+  .selection__case {
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .selection__card {
+    width: 43%;
   }
 }/*# sourceMappingURL=style.css.map */
