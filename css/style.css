@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1920px;
 }
 
 main {
@@ -778,13 +778,15 @@ p {
     margin: 0px 6px 0px 6px;
   }
   .selection__case {
-    width: 70%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .selection__card {
-    width: 43%;
+    width: 35%;
+  }
+  .selection__card__img__blocnew {
+    left: 75%;
   }
   /* Page restaurant */
   .food__case {
