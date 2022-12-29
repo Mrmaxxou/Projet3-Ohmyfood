@@ -302,6 +302,8 @@ p {
 .location__form {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 60px;
   width: 30%;
 }
 .location__form .fa-location-dot {
@@ -414,8 +416,15 @@ p {
   padding: 40px 0px 40px 0px;
 }
 .selection h3 {
+  width: 100%;
+  margin: 0px 0px 20px 40px;
+}
+
+.selection__case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
-  margin-bottom: 20px;
 }
 
 .selection__card {
@@ -677,4 +686,26 @@ p {
 .food__offer__meals:hover > .food__offer__price {
   -webkit-animation: validatetranslate 0.5s ease-in-out both;
           animation: validatetranslate 0.5s ease-in-out both;
+}
+
+/***** Responsive Tablette *****/
+/****       1400-992        *****/
+@media screen and (min-width: 991.9px) {
+  .functioning__case {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+  }
+  .case {
+    margin: 0px 6px 0px 6px;
+  }
+  .selection__case {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .selection__card {
+    width: 45%;
+  }
 }/*# sourceMappingURL=style.css.map */
