@@ -37,6 +37,11 @@
   box-shadow: 4px 4px 5px #D9D9D9;
   text-decoration: none;
   color: #000000;
+  &:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
 }
 
 @mixin new{
