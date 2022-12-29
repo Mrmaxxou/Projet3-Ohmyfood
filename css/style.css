@@ -494,7 +494,8 @@ p {
   justify-content: center;
   position: absolute;
   bottom: 80%;
-  left: 72%;
+  right: 0;
+  margin-right: 20px;
 }
 .selection__card__img__blocnew p {
   font-weight: 500;
