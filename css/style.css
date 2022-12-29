@@ -361,6 +361,10 @@ p {
   flex-direction: row;
   align-items: center;
 }
+.case:hover {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
 .case p {
   border: solid 1px #9356DC;
   padding: 2px 6px 2px 6px;
