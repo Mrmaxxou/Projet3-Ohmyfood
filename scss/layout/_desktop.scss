@@ -1,4 +1,4 @@
-/***** Responsive Tablette *****/
+/***** Responsive Desktop *****/
     /****       1400-992        *****/
 
     @media screen and (min-width: 991.9px)
@@ -26,4 +26,15 @@
         .selection__card{
             width: 43%;
         }
+
+        /* Page restaurant */
+
+       .food__case{
+        flex-direction: row;
+        justify-content: space-around;
+       }
+
+       .food__offer{
+        width: 28%;
+       }
     }
