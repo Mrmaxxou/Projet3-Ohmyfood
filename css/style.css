@@ -407,10 +407,6 @@ p {
   flex-direction: row;
   align-items: center;
 }
-.case:hover {
-  opacity: 0.6;
-  transition: 0.3s ease-in-out;
-}
 .case p {
   border: solid 1px #9356DC;
   padding: 2px 6px 2px 6px;
@@ -435,25 +431,15 @@ p {
 .case__bloc h5 {
   margin-left: 20px;
 }
+.case__bloc:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+  border-color: rgba(147, 86, 220, 0);
+}
+.case__bloc:hover i {
+  color: #9356DC;
+}
 .case__bloc i {
   color: #786a6a;
-}
-.case__bloc--highlight {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  border: solid 1px rgba(147, 86, 220, 0);
-  padding: 16px 80px 16px 20px;
-  border-radius: 15px;
-  margin: 8px 0px 8px 0px;
-  box-shadow: 4px 4px 5px #D9D9D9;
-  background-color: rgba(147, 86, 220, 0.1);
-}
-.case__bloc--highlight h5 {
-  margin-left: 20px;
-}
-.case__bloc--highlight i {
-  color: #9356DC;
 }
 
 /* Sélection restaurant*/
