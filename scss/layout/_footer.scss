@@ -22,6 +22,11 @@ footer{
     }
 }
 
+.footer__case{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__offer{
     margin: 15px 0px 8px 0px;
     & i{
@@ -42,3 +47,56 @@ footer{
     }
 }
 
+/***** Responsive Tablette *****/
+    /****               *****/
+
+    @media screen and (min-width: 767.9px) 
+    {
+
+        .footer__case{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 95%;
+            & a{
+                margin: 0;
+            }
+        }
+
+        .footer__offer{
+            margin: 0;
+        }
+
+        .footer__partner{
+            margin:0;
+        }
+    }
+
+
+/***** Responsive Desktop *****/
+    
+
+    @media screen and (min-width: 991.9px)
+    {
+      
+        .footer__case{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 95%;
+            & a{
+                margin: 0;
+            }
+        }
+
+        .footer__offer{
+            margin: 0;
+        }
+
+        .footer__partner{
+            margin:0;
+        }
+
+    }

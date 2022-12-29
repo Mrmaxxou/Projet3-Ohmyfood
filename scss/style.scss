@@ -363,6 +363,13 @@ font-weight: 100;
     margin-bottom: 20px;
 }
 
+.food__case{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .food__offer
 {
