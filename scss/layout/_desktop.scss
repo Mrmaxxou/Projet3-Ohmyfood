@@ -40,4 +40,12 @@
        .food__offer{
         width: 28%;
        }
+
+    .menu__img{
+        & img{
+            height: 300px; 
+        }
+        
+    }
+
     }
